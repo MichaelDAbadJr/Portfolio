@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import picturePlaceApp from './images/picture-place-app.png';
+import profilePic from './images/profile-pic.jpg';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, setCount] = useState(100000);
+  const formatter = new Intl.NumberFormat();
+  const formattedNumber = formatter.format(count);
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://github.com/MichaelDAbadJr" target="_blank">
+          <img
+            src={profilePic}
+            className="logo"
+            id="profile-pic"
+            alt="Vite logo"
+          />
         </a>
       </div>
-      <h1>I am a fullstack software engineer, pay me bitch</h1>
+      <div>
+        <h1>I am a fullstack software engineer</h1>
+        <a
+          style={{ display: 'block', textAlign: 'center' }}
+          href="https://github.com/MichaelDAbadJr"
+          target="_blank"
+        >
+          My GitHub Portfolio
+        </a>
+        <h3>Portfolio in progress, I will be uploading more projects soon</h3>
+        <a href="https://sweet-halva-548b5c.netlify.app/" target="_blank">
+          <img src={picturePlaceApp} className="logo react" alt="React logo" />
+        </a>
+        <h5>Check out this Picture Place App I made</h5>
+      </div>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <h3>My required salary is $ {formattedNumber}</h3>
+        <button
+          onClick={() => setCount(formattedNumber => formattedNumber + 1000)}
+        >
+          Click me to give me a raise
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
