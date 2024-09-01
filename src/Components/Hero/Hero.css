@@ -2,13 +2,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 35px;
+  gap: 2rem;
+  text-align: center; /* Center text for better alignment on all devices */
+  padding: 2rem;
 }
 
 .hero img {
-  margin-top: 20px;
-  height: 12rem;
-  width: 12rem;
+  /* margin-top: 2rem; Space from top */
+  height: 24rem;
+  width: 24rem;
   border-radius: 50%;
   border: 2px solid #fff;
   cursor: pointer;
@@ -19,7 +21,7 @@
 .hero h1 {
   text-align: center;
   width: 70%;
-  font-size: 90px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .hero h1 span {
@@ -29,26 +31,26 @@
   -webkit-text-fill-color: transparent;
 }
 .hero p {
-  width: 50%;
-  text-align: center;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 80%; /* Adjust width for responsive design */
+  margin: 0 auto;
 }
 .hero-action {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 1.5rem;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 .hero-connect {
-  padding: 25px 45px;
+  padding: 1rem 2rem;
   border-radius: 50px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 100%);
   cursor: pointer;
 }
 .hero-resume {
-  padding: 25px 75px;
+  padding: 1rem 2rem;
   border-radius: 50px;
   border: 2px solid #fff;
   cursor: pointer;
@@ -60,37 +62,67 @@
   border-color: #b415ff;
 }
 .nav-connect:hover {
-    transform: scale(1.05)
+  transform: scale(1.05);
 }
-@media(max-width:768px) {
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 0rem;
+  }
   .hero img {
-    margin-top: 120px;
-    width: 250px;
-    height: 250px;
+    /* margin-top: 120px; */
+    width: 28rem;
+    height: 28rem;
   }
   .hero h1 {
-    margin-top: 50px;
+    margin-top: 0rem;
     width: 90%;
-    font-size: 50px;
+    font-size: 2.5rem;
   }
   .hero p {
     width: 60%;
-    font-size: 18px;
-    line-height: 32px;
-    margin: 10px 0px;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
   .hero-action {
-    gap: 16px;
-    font-size: 18px;
+    gap: 1rem;
+    font-size: 1.125rem;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
-  .hero-connect {
-    padding: 20px 30px;
+  .hero-connect,
+  .hero-resume {
+    padding: 1.25rem 1.875rem; 
     border-radius: 40px;
   }
+}
+@media (max-width: 480px) {
+  .hero {
+    margin-top: 0rem;
+  }
+  .hero img {
+    margin-top: 0rem;
+    width: 18rem;
+    height: 18rem;
+  }
+  .hero h1 {
+    margin-top: 0rem;
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .hero p {
+    width: 80%;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .hero-action {
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  }
+  .hero-connect,
   .hero-resume {
-    padding: 20px 50px;
+    padding: 1.25rem 1.875rem; 
     border-radius: 40px;
   }
 }

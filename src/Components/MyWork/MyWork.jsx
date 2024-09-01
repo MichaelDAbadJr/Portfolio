@@ -9,11 +9,11 @@ const MyWork = () => {
     <div id='work' className="mywork">
       <div className="mywork-title">
         <h1>My latest work</h1>
-        <img src={theme_pattern} alt="" />
+        <img src={theme_pattern} alt="Theme Pattern" />
       </div>
       <div className="mywork-container">
-        {mywork_data.map((work, index) => {
-          return <img key={work.w_no} src={work.w_img} alt="" />;
+        {mywork_data.map((work) => {
+          return <img key={work.w_no} src={work.w_img} alt={`Work ${work.w_no}`} />;
         })}
       </div>
       <div className="mywork-showmore">

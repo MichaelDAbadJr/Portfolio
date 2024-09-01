@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/junmike.svg';
 import underline from '../../assets/nav_underline.svg';
@@ -7,57 +7,63 @@ import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
 
 const Navbar = () => {
-  const [menu, setMenu] = useState('home');
-  const menuRef = useRef();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState('home');
 
-  const openMenu = () => {
-    menuRef.current.style.right = '0';
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
-  
-  const closeMenu = () => {
-    menuRef.current.style.right = '-350px';
+
+  const handleMenuClick = section => {
+    setActiveMenu(section);
+    setIsMenuOpen(false); // Close the menu after a click
   };
 
   return (
     <div className="navbar">
-      <img src={logo} alt="" id="jun" />
-      <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
-      <ul ref={menuRef} className="nav-menu">
+      <img src={logo} alt="" id="jun-navbar" />
+      <img
+        src={menu_open}
+        onClick={toggleMenu}
+        alt="Open Menu"
+        className={`nav-mob-open ${isMenuOpen ? 'hidden' : ''}`}
+      />
+      <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <img
           src={menu_close}
-          onClick={closeMenu}
-          alt=""
-          className="nav-mob-close"
+          onClick={toggleMenu}
+          alt="Close Menu"
+          className={`nav-mob-close ${isMenuOpen ? 'visible' : 'hidden'}`}
         />
         <li>
           <AnchorLink className="anchor-link" href="#home">
-            <p onClick={() => setMenu('home')}>Home</p>
+            <p onClick={() => handleMenuClick('home')}>Home</p>
           </AnchorLink>
-          {menu === 'home' ? <img src={underline} alt="" /> : <></>}
+          {activeMenu === 'home' ? <img src={underline} /> : <></>}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#about">
-            <p onClick={() => setMenu('about')}>About Me</p>
+            <p onClick={() => handleMenuClick('about')}>About Me</p>
           </AnchorLink>
-          {menu === 'about' ? <img src={underline} alt="" /> : <></>}
+          {activeMenu === 'about' ? <img src={underline} /> : <></>}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#services">
-            <p onClick={() => setMenu('services')}>Services</p>
+            <p onClick={() => handleMenuClick('services')}>Services</p>
           </AnchorLink>
-          {menu === 'services' ? <img src={underline} alt="" /> : <></>}
+          {activeMenu === 'services' ? <img src={underline} /> : <></>}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#work">
-            <p onClick={() => setMenu('work')}>Portfolio</p>
+            <p onClick={() => handleMenuClick('work')}>Portfolio</p>
           </AnchorLink>
-          {menu === 'work' ? <img src={underline} alt="" /> : <></>}
+          {activeMenu === 'work' ? <img src={underline} /> : <></>}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#contact">
-            <p onClick={() => setMenu('contact')}>Contact</p>
+            <p onClick={() => handleMenuClick('contact')}>Contact</p>
           </AnchorLink>
-          {menu === 'contact' ? <img src={underline} alt="" /> : <></>}
+          {activeMenu === 'contact' ? <img src={underline} /> : <></>}
         </li>
       </ul>
       <div className="nav-connect">

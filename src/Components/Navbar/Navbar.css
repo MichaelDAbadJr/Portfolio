@@ -2,20 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 170px;
+  margin: 2rem auto; /* Centered horizontally */
+  padding: 0 2rem; /* Add padding instead of fixed margins */
+  max-width: 1200px; /* Limit the width to avoid stretching on large screens */
 }
 .nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 60px;
-  font-size: 20px;
+  gap: 3rem; /* Gap between menu items, using rem */
+  font-size: 1.25rem; /* Use rem for font size */
 }
 .nav-connect {
-  padding: 18px 36px;
+  padding: 1rem 2rem;
+  margin: 1rem;
   border-radius: 50px;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
-  font-size: 22px;
+  font-size: 1.375rem;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -25,7 +28,7 @@
 .nav-menu li {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.25rem;
   cursor: pointer;
 }
 .nav-menu li img {
@@ -42,9 +45,27 @@
 .nav-mob-open {
   display: none;
 }
+#jun-navbar {
+  height: 12rem;
+  width: 12rem;
+  margin: 1rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#jun-navbar:hover {
+  transform: scale(1.05);
+}
+/* Tablet and small desktop screens */
 @media (max-width: 768px) {
+  #jun-navbar {
+    width: 8rem; /* Adjust the width as needed */
+    height: 8rem; 
+  }
   .navbar {
-    margin: 20px 50px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0rem;
   }
   .nav-connect {
     display: none;
@@ -52,38 +73,91 @@
   .nav-mob-open {
     display: block;
     position: fixed;
-    right: 30px;
+    right: 1.5rem;
+    top: 1.5rem;
   }
   .nav-mob-close {
     display: block;
-    position: relative;
-    top: 30px;
-    left: 290px;
-    width: 30px;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 1.875rem;
+    cursor: pointer;
   }
   .nav-menu {
     position: fixed;
     flex-direction: column;
     align-items: start;
     top: 0;
-    gap: 30px;
+    gap: 1.5rem;
     background-color: #1f0016;
-    width: 350px;
+    width: 15rem;
     height: 100%;
     z-index: 2;
     transition: right 0.5s;
-    right: -350px;
+    right: -18.75rem;
+  }
+  .nav-menu.open {
+    right: 0; /* On-screen when menu is open */
   }
   .nav-menu li {
-    font-size: 30px;
-    padding-left: 100px;
+    font-size: 1.875rem;
+    padding-left: 2rem;
     flex-direction: row;
-    gap: 30px;
+    gap: 1.25rem;
+    margin-top: 2rem;
   }
 }
-#jun {
-  transition: 0.5s;
-}
-#jun:hover {
-  transform: scale(1.05);
+
+/* Mobile view and smaller screens */
+@media (max-width: 480px) {
+  #jun-navbar {
+    width: 6rem; /* Adjust the width as needed */
+    height: 6rem; 
+  }
+  .navbar {
+    padding: 0.5rem;
+    margin-bottom: 0rem;
+  }
+  .nav-connect {
+    display: none;
+  }
+  .nav-mob-open {
+    display: block;
+    position: fixed;
+    right: 1.5rem;
+    top: 1.5rem;
+    
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: absolute; 
+    top: 1.125rem;
+    right: 1.125rem;
+    width: 1.175rem;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -15rem; /* Hidden off-screen */
+    width: 8rem;
+    height: 100%;
+    padding-top: 2rem;
+    gap: 0rem;
+    top: 0;
+    background-color: #1f0016;
+    z-index: 2; /* Below close button but above other content */
+    transition: right 0.5s ease-in-out;
+  }
+
+  .nav-menu.open {
+    right: 0; /* Visible when open */
+  }
+
+  .nav-menu li {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
 }
