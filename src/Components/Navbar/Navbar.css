@@ -1,10 +1,10 @@
 .navbar {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin: 2rem 2rem; /* Centered horizontally */
   padding: 2rem 2rem; /* Add padding instead of fixed margins */
-  max-width: 1200px; /* Limit the width to avoid stretching on large screens */
 }
 .nav-menu {
   display: flex;
@@ -161,7 +161,7 @@
     padding-left: 0.5rem;
   }
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (max-device-width: 932px) and (orientation: landscape) and (max-device-height: 430px){
   #jun-navbar {
     width: 6rem; /* Adjust the width as needed */
     height: 6rem; 
@@ -207,8 +207,16 @@
     right: 0; /* Visible when open */
   }
 
+  .nav-menu ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 0;
+    margin: 0;
+  }
+
   .nav-menu li {
     font-size: 1rem;
     padding-left: 0.5rem;
+    
   }
 }
