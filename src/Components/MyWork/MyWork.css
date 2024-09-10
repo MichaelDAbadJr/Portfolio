@@ -1,141 +1,142 @@
 .mywork {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem; 
-    margin: 5rem 10.625rem; 
-  }
-  .mywork-title {
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 5rem 10.625rem;
+}
+.mywork-title {
+  position: relative;
+}
+.mywork-title h1 {
+  padding: 0 1.875rem;
+  font-size: 5rem;
+  font-weight: 600;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflowed text */
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflowed text */
+}
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+  justify-items: center;
+}
+.mywork-container img {
+  box-sizing: border-box;
+  width: 26.1875rem;
+  height: 17.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mywork-container img:hover {
+  transform: scale(1.1);
+  border: 0.25rem solid #ff00ff;
+  border-radius: 0.625rem;
+  transition: 0.3s;
+}
+.mywork-showmore {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  gap: 0.9375rem;
+  border-radius: 3.125rem;
+  border: 0.125rem solid white;
+  padding: 1.875rem 3.75rem;
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.mywork-showmore:hover {
+  gap: 3.125rem; /* 50px */
+  margin: 3.125rem 4.375rem; /* 50px 70px */
+  transition: 0.6s;
+}
+@media (max-width: 768px) {
+  .mywork {
+    gap: 50px;
+    margin: 50px 70px;
+    align-items: start;
   }
   .mywork-title h1 {
-    padding: 0 1.875rem; 
-    font-size: 5rem; 
+    padding: 0;
+    font-size: 3.125rem;
     font-weight: 600;
-    white-space: nowrap;/* Prevents text from wrapping */
-    overflow: hidden; /* Hides overflowed text */
-    text-overflow: ellipsis; /* Adds ellipsis (...) for overflowed text */
   }
   .mywork-title img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+    width: 8.125rem;
+    margin-right: -1.25rem;
   }
   .mywork-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2.5rem; 
-    margin-bottom: 5rem; 
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* Adjust column count dynamically */
+    grid-template-columns: 1fr 1fr;
+    gap: 1.875rem;
   }
   .mywork-container img {
-    box-sizing: border-box;
-    width: 26.1875rem; 
-    height: 17.5rem; 
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  
-  .mywork-container img:hover {
-    transform: scale(1.1);
-    border: 0.25rem solid #ff00ff; 
-    border-radius: 0.625rem; 
-    transition: 0.3s;
+    width: 100%;
+    height: auto;
   }
   .mywork-showmore {
-    display: flex;
-    gap: 0.9375rem; 
-    border-radius: 3.125rem; 
-    border: 0.125rem solid white; 
-    padding: 1.875rem 3.75rem; 
-    font-size: 1.375rem;
-    font-weight: 500;
-    margin-bottom: 5rem; 
-    transition: 0.6;
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+    margin: 3.125rem auto;
     cursor: pointer;
   }
-  .mywork-showmore:hover {
-    gap: 3.125rem; /* 50px */
-    margin: 3.125rem 4.375rem; /* 50px 70px */
-    transition: 0.6s;
+}
+@media (max-width: 480px) {
+  .mywork {
+    margin: 1.25rem 2.5rem;
+    gap: 1.875rem;
   }
-  @media (max-width: 768px) {
-    .mywork {
-      gap: 50px;
-      margin: 50px 70px;
-      align-items: start;
-    }
-    .mywork-title h1 {
-      padding: 0;
-      font-size: 3.125rem; 
-      font-weight: 600;
-    }
-    .mywork-title img {
-      width: 8.125rem; 
-      margin-right: -1.25rem; 
-    }
-    .mywork-container {
-      grid-template-columns: 1fr 1fr;
-      gap: 1.875rem;
-    }
-    .mywork-container img {
-      width: 100%;
-      height: auto;
-    }
-    .mywork-showmore {
-      padding: 1.25rem 2.5rem; 
-      font-size: 1.125rem; 
-      margin: 3.125rem auto; 
-      cursor: pointer;
-    }
+
+  .mywork-title h1 {
+    font-size: 2.5rem;
   }
-  @media (max-width: 480px) {
-    .mywork {
-      margin: 1.25rem 2.5rem; 
-      gap: 1.875rem; 
-    }
-  
-    .mywork-title h1 {
-      font-size: 2.5rem;
-    }
-  
-    .mywork-title img {
-      width: 6.875rem; 
-    }
-  
-    .mywork-showmore {
-      padding: 1.25rem 2.5rem; 
-      font-size: 1.125rem; 
-    }
+
+  .mywork-title img {
+    width: 6.875rem;
   }
-  @media only screen and (orientation: landscape) {
-    .mywork {
-        gap: 50px;
-        margin: 50px 70px;
-        align-items: start;
-      }
-      .mywork-title h1 {
-        padding: 0;
-        font-size: 3.125rem; 
-        font-weight: 600;
-      }
-      .mywork-title img {
-        width: 8.125rem; 
-        margin-right: -1.25rem; 
-      }
-      .mywork-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.875rem;
-      }
-      .mywork-container img {
-        width: 100%;
-        height: auto;
-      }
-      .mywork-showmore {
-        padding: 1.25rem 2.5rem; 
-        font-size: 1.125rem; 
-        margin: 3.125rem auto; 
-        cursor: pointer;
-      }
+
+  .mywork-showmore {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
   }
+}
+@media only screen and (orientation: landscape) {
+  .mywork {
+    margin: 50px 70 px;
+    gap: 50px;
+  }
+  .mywork-title h1 {
+    font-size: 2.5rem;
+  }
+  .mywork-title img {
+    width: 6.875rem; 
+  }
+  .mywork-container {
+    gap: 1.875rem;
+  }
+  .mywork-container img {
+    width: 100%;
+    height: auto;
+  }
+  .mywork-showmore {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+    margin: 3.125rem auto;
+    cursor: pointer;
+  }
+}

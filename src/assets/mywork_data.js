@@ -1,14 +1,15 @@
-import project1_img from '../assets/project_1.svg'
-import project2_img from '../assets/project_2.svg'
+import project1_img from '../assets/PicturePlace-Cover.jpg'
+import project2_img from '../assets/FoodOrder-Cover.jpg'
 import project3_img from '../assets/project_3.svg'
 import project4_img from '../assets/project_4.svg'
 import project5_img from '../assets/project_5.svg'
 import project6_img from '../assets/project_6.svg'
 
+
 const mywork_data = [
     {
         w_no:1,
-        w_name:"Web design",
+        w_name:"Picture Place App",
         w_img:project1_img
     },
     {
