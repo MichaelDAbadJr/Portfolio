@@ -11,8 +11,7 @@ const Hero = () => {
         <span>I'm Jun Michael,</span> Full Stack Software Engineer based in USA.
       </h1>
       <p>
-        I enjoy making responsive websites and apps that clients love. I have 5
-        years of experience in the software development life cycle
+      Hello! I'm a passionate Full Stack Software Engineer with a knack for building robust and scalable web applications. With a strong foundation in both front-end and back-end technologies, I bring a holistic approach to software development. Here&rsquo;s a glimpse into my skill set and experience:
       </p>
       <div className="hero-action">
         <div className="hero-connect">

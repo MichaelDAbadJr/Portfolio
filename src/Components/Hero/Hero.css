@@ -2,18 +2,19 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   text-align: center; /* Center text for better alignment on all devices */
-  padding: 2rem;
+  padding: 0;
 }
 
 .hero img {
   /* margin-top: 2rem; Space from top */
-  height: 24rem;
-  width: 24rem;
+  height: 22rem;
+  width: 22rem;
   border-radius: 50%;
   border: 2px solid #fff;
   cursor: pointer;
+  margin-top: -2rem;
 }
 .hero img:hover {
   border-color: #b415ff;
@@ -31,20 +32,20 @@
   -webkit-text-fill-color: transparent;
 }
 .hero p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   width: 80%; /* Adjust width for responsive design */
   margin: 0 auto;
 }
 .hero-action {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
   font-weight: 500;
   margin-bottom: 3rem;
 }
 .hero-connect {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border-radius: 50px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 100%);
   cursor: pointer;

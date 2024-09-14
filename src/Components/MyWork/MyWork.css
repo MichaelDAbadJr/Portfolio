@@ -114,10 +114,15 @@
     padding: 1.25rem 2.5rem;
     font-size: 1.125rem;
   }
+  .mywork-container {
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr)); /* Adjust column count dynamically */
+    /* grid-template-columns: 1fr; */
+    gap: 0.875rem;
+  }
 }
 @media only screen and (orientation: landscape) {
   .mywork {
-    margin: 50px 70 px;
+    margin: 50px 70px;
     gap: 50px;
   }
   .mywork-title h1 {

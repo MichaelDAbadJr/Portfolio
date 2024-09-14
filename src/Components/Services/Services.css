@@ -107,12 +107,14 @@
   }
   
   .services-container {
-    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-columns: 1fr ; /* 1 columns */
+    align-items: center;
     gap: 1.875rem; 
   }
 }
 @media (max-width: 480px) {
   .services {
+    align-items: center;
     margin: 1.25rem 2.5rem; 
     gap: 2.5rem; 
   }
@@ -145,11 +147,18 @@
   }
   
   .services-container {
-    grid-template-columns: 0.25fr 0.25fr; 
-    gap: 1.25rem;
+    grid-template-columns: 1fr ; /* 1 columns */
+    align-items: center;
+    gap: 0.875rem; 
   }
 }
 @media only screen and (orientation: landscape) {
+  .nav-menu open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
   .services {
     margin: 1.25rem 2.5rem; 
     gap: 2.5rem; 

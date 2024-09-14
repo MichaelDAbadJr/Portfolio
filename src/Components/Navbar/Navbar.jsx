@@ -48,16 +48,16 @@ const Navbar = () => {
           {activeMenu === 'about' ? <img src={underline} /> : <></>}
         </li>
         <li>
-          <AnchorLink className="anchor-link" offset={50} href="#services">
-            <p onClick={() => handleMenuClick('services')}>Services</p>
-          </AnchorLink>
-          {activeMenu === 'services' ? <img src={underline} /> : <></>}
-        </li>
-        <li>
           <AnchorLink className="anchor-link" offset={50} href="#work">
             <p onClick={() => handleMenuClick('work')}>Portfolio</p>
           </AnchorLink>
           {activeMenu === 'work' ? <img src={underline} /> : <></>}
+        </li>
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#services">
+            <p onClick={() => handleMenuClick('services')}>Services</p>
+          </AnchorLink>
+          {activeMenu === 'services' ? <img src={underline} /> : <></>}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#contact">
