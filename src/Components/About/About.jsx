@@ -5,7 +5,7 @@ import profilePic from '../../images/profile-pic.jpg';
 
 const About = () => {
   return (
-    <div id='about' className="about">
+    <div id="about" className="about">
       <div className="about-title">
         <h1>About me</h1>
         <img src={theme_pattern} alt="" />
@@ -17,10 +17,10 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I am an experienced Frontend Developer and Backend Developer with over a 3 years of
-              experience in the field. Throughout my career, I have had the
-              privilege of collaborating with outstanding developers,
-              contributing to their success and growth.
+              I am an experienced Frontend Developer and Backend Developer with
+              over a 3 years of experience in the field. Throughout my career, I
+              have had the privilege of collaborating with outstanding
+              developers, contributing to their success and growth.
             </p>
             <p>
               My passion for Full Stack Development is not only reflected in my
@@ -30,32 +30,36 @@ const About = () => {
           </div>
           <div className="about-skills">
             <div className="about-skill">
+              <p>React JS</p>
+              <hr style={{ width: '65%' }} />
+            </div>
+            <div className="about-skill">
+              <p>JavaScript</p>
+              <hr style={{ width: '55%' }} />
+            </div>
+            <div className="about-skill">
               <p>HTML & CSS</p>
               <hr style={{ width: '50%' }} />
             </div>
             <div className="about-skill">
-              <p>React JS</p>
-              <hr style={{ width: '70%' }} />
-            </div>
-            <div className="about-skill">
-              <p>JavaScript</p>
+              <p>Node Express</p>
               <hr style={{ width: '60%' }} />
             </div>
             <div className="about-skill">
               <p>Next JS</p>
-              <hr style={{ width: '50%' }} />
+              <hr style={{ width: '35%' }} />
             </div>
           </div>
         </div>
       </div>
-      <div className="about-achievements">
+      {/* <div className="about-achievements">
         <div className="about-achievement">
-          <h1>10+</h1>
+          <h1>5+</h1>
           <p>YEARS OF EXPERIENCE</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>90+</h1>
+          <h1></h1>
           <p>PROJECTS COMPLETED</p>
         </div>
         <hr />
@@ -63,8 +67,8 @@ const About = () => {
           <h1>50+</h1>
           <p>HAPPY CLIENTS</p>
         </div>
-        <hr />
-      </div>
+        <hr /> 
+      </div>*/}
     </div>
   );
 };

@@ -29,6 +29,87 @@
   gap: 2.5rem;
   margin-bottom: 5rem;
   justify-items: center;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.1);
+  border: 0.25rem solid #9508b8;
+  border-radius: 0.625rem;
+  transition: 0.3s;
+}
+.mywork-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-button {
+  background: #55058ae3;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.overlay-button:hover {
+  background: #d77803;
+}
+.overlay-button:hover {
+  background: #cc00cc;
+}
+
+.netlify-button {
+  background: #00C4CC; /* Netlify blue */
+}
+
+.netlify-button:hover {
+  background: #00A0A6; /* Darker Netlify blue */
 }
 .mywork-container img {
   box-sizing: border-box;
