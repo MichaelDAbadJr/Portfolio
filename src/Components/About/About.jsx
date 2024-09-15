@@ -52,55 +52,53 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="about-tech-stacks-container">
-        <div className="about-tech-stacks">
+        <div className="about-tech-stacks-container">
+          <div className="about-tech-stacks">
+            <div className="tech-stack-section">
+              <h2>Frontend Stack</h2>
+              <ul>
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Redux</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>SAAS</li>
+              </ul>
+            </div>
 
-          <div className="tech-stack-section">
-            <h2>Frontend Stack</h2>
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Redux</li>
-              <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
-              <li>SAAS</li>
-            </ul>
+            <div className="tech-stack-section">
+              <h2>Backend Stack</h2>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>Python Django</li>
+                <li>Java</li>
+                <li>Google Cloud</li>
+                <li>Postman</li>
+                <li>JWT Tokens</li>
+                <li>bcrypt</li>
+              </ul>
+            </div>
+
+            <div className="tech-stack-section">
+              <h2>DevOps Stack</h2>
+              <ul>
+                <li>Netlify</li>
+                <li>Heroku</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Git/Github</li>
+                <li>CI/CD</li>
+                <li>Google App Engine</li>
+              </ul>
+            </div>
           </div>
-
-          <div className="tech-stack-section">
-            <h2>Backend Stack</h2>
-            <ul>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
-              <li>Python Django</li>
-              <li>Java</li>
-              <li>Google Cloud</li>
-              <li>Postman</li>
-              <li>JWT Tokens</li>
-              <li>bcrypt</li>
-            </ul>
-          </div>
-
-          <div className="tech-stack-section">
-            <h2>DevOps Stack</h2>
-            <ul>
-              <li>Netlify</li>
-              <li>Heroku</li>
-              <li>Docker</li>
-              <li>Kubernetes</li>
-              <li>Git/Github</li>
-              <li>CI/CD</li>
-              <li>Google App Engine</li>
-            </ul>
-          </div>
-
         </div>
-      </div>
       {/* <div className="about-achievements">
         <div className="about-achievement">
           <h1>5+</h1>

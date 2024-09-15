@@ -53,7 +53,7 @@
   font-weight: 500;
 }
 .about-skill p {
-  min-width: 9.375rem;
+  min-width: 7.375rem;
 }
 .about-skill hr {
   outline: none;
@@ -144,7 +144,7 @@
 @media (max-width: 768px) {
   .about {
     gap: 1.875rem;
-    margin: 3.125rem 4.375rem;
+    margin: 2rem;
     align-items: start;
   }
   .about-title h1 {
@@ -204,7 +204,7 @@
 }
 @media (max-width: 480px) {
   .about {
-    margin: 2.5rem 3.125rem;
+    margin: 1.5rem;
   }
 
   .about-title h1 {
@@ -222,7 +222,6 @@
   }
   .about-skill {
     gap: 0.15rem;
-    align-items: center;
   }
 
   .about-skill p {
@@ -233,7 +232,22 @@
     height: 0.35rem;
     width: 0.5rem;
   }
+  .about-tech-stacks-container {
+    margin: 0 auto; /* Centers the container */
+    padding: 0.5rem; /* Add some padding */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .about-tech-stacks {
+    gap: 1rem; /* Adjust gap for mobile */
+    padding: 0.25rem; /* Reduce padding to fit mobile */
+  }
 
+  .tech-stack-section {
+    width: 100%; /* Ensure each section takes up the full width */
+    box-sizing: border-box; /* Prevent any overflow caused by padding */
+  }
   /* .about-achievement h1 {
     font-size: 1.75rem;
   }

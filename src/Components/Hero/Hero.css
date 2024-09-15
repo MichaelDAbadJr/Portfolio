@@ -18,6 +18,7 @@
 }
 .hero #banner {
   width: 40%;
+  min-width:28rem;
   height: auto;
    border-radius: 4%;
   border: 2px solid #fff;
@@ -115,11 +116,12 @@
   }
   .hero #profile-pic {
     /* margin-top: 120px; */
-    width: 28rem;
-    height: 28rem;
+    width: 18rem;
+    height: 18rem;
   }
   .hero #banner {
     width: 60%;
+    min-width: 22rem;
     height: auto;
      border-radius: 4%;
     border: 2px solid #fff;
