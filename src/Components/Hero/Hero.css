@@ -76,6 +76,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.hero p span {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .hero p {
   font-size: 1.25rem;
   line-height: 1.5rem;
