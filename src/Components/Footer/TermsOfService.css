@@ -1,0 +1,42 @@
+.terms-of-service {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .terms-of-service h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-of-service p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-of-service h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .terms-of-service {
+      padding: 1rem;
+    }
+  
+    .terms-of-service h1 {
+      font-size: 1.5rem;
+    }
+  
+    .terms-of-service h2 {
+      font-size: 1.2rem;
+    }
+  }

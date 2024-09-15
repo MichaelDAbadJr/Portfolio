@@ -41,13 +41,13 @@ const Contact = () => {
             <h1>Let's talk</h1>
             <p>
               I'm currently available to take on new projects, so feel free to
-              send me a message about anything that you want me to work on. You
-              can contact anytime
+              send me a message about anything. You
+              can contact anytime and I will get back to you soon.
             </p>
             <div className="contact-details">
               <div className="contact-detail">
                 <img src={mail_icon} alt="" />
-                <p>jun.abad@my.utsa.edu</p>
+                <p>developer@junmike.dev</p>
               </div>
               <div className="contact-detail">
                 <img src={call_icon} alt="" />
