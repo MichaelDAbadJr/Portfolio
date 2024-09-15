@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-.hero img {
+.hero #profile-pic {
   /* margin-top: 2rem; Space from top */
   height: 22rem;
   width: 22rem;
@@ -16,8 +16,52 @@
   cursor: pointer;
   margin-top: -2rem;
 }
-.hero img:hover {
-  border-color: #b415ff;
+.hero #banner {
+  width: 40%;
+  height: auto;
+   border-radius: 4%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  /* margin-top: rem; */
+  /* Animation setup */
+  animation: vortexIn 0.70s ease-out forwards;
+  transform: scale(0) rotate(0deg); /*inital state*/
+  opacity: 0; /*initially hidden*/
+}
+@keyframes vortexIn {
+  0% {
+    transform: scale(0) rotate(720deg); /*Start from nothing*/
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0.15) rotate(580deg); 
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(0.35) rotate(360deg); /*mid-point*/
+    opacity: 0.35;
+  }
+  75% {
+    transform: scale(0.70) rotate(180deg); /*mid-point*/
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1) rotate(0deg); /*End fullsize*/
+    opacity: 1;
+  }
+}
+.hero #profile-pic:hover {
+ border: 0.125rem solid #ff00ff; 
+  background: linear-gradient(45deg, #3f0028, #582300);
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.hero #banner:hover {
+ border: 0.125rem solid #ff00ff; 
+  background: linear-gradient(45deg, #3f0028, #582300);
+  transform: scale(1.05);
+  transition: 0.4s;
 }
 .hero h1 {
   text-align: center;
@@ -69,10 +113,18 @@
   .hero {
     margin-top: 0rem;
   }
-  .hero img {
+  .hero #profile-pic {
     /* margin-top: 120px; */
     width: 28rem;
     height: 28rem;
+  }
+  .hero #banner {
+    width: 60%;
+    height: auto;
+     border-radius: 4%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    /* margin-top: rem; */
   }
   .hero h1 {
     margin-top: 0rem;
@@ -100,7 +152,7 @@
   .hero {
     margin-top: 0rem;
   }
-  .hero img {
+  .hero #profile-pic {
     margin-top: 0rem;
     width: 18rem;
     height: 18rem;
@@ -131,7 +183,7 @@
   .hero {
     margin-top: 0rem;
   }
-  .hero img {
+  .hero #profile-pic {
     margin-top: 0rem;
     width: 18rem;
     height: 18rem;
