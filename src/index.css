@@ -24,3 +24,9 @@ body {
   background-color: rgba(2, 2, 24, 0.7); 
   z-index: -1;
  }
+ @media (max-width: 768px) {
+  body {
+    background-size: 100% auto; /* Ensure full width on mobile, height auto-adjusts */
+    background-attachment: scroll; /* Ensure normal background scroll */
+  }
+}
