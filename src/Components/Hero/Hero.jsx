@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 import profilePic from '../../images/profile-pic.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import banner from '../../assets/junmike.dev-banner.jpeg';
+import banner from '../../assets/junmike.dev-banner2.jpeg';
 
 const Hero = () => {
   return (

@@ -4,33 +4,63 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: -2rem;
+  position: relative;
   /* margin: 2rem 2rem; Centered horizontally */
   /* padding: 2rem 2rem; Add padding instead of fixed margins */
 }
 .nav-menu {
+  position: relative;
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 3rem; /* Gap between menu items, using rem */
   font-size: 1.25rem; /* Use rem for font size */
+  font-weight: 800;
+  border: 1px solid #0033ff;
+  background: transparent; /* Transparent background */
+}
+/* Pseudo-element for opaque background */
+.nav-menu::before {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(188, 188, 219, 0.4); /* Semi-transparent background */
+  z-index: -1; /* Position it behind the menu items */
+  /* border: 3px solid #0033ff; Match the border */
+}
+.nav-menu p:first-of-type {
+  margin-left: 1rem;
+}
+.nav-menu p:first-of-type {
+  margin-right: 1rem;
+}
+
+/* Nav link text styling */
+.nav-menu p {
+  background: transparent; /* Ensure text background is transparent */
 }
 .nav-connect {
-  padding: 1rem 2rem;
-  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.25rem;
   border-radius: 50px;
-  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
+  border: 0.125rem solid #000000;
+  background: linear-gradient(267deg, #0051ff 0.36%, #ffffff);
   font-size: 1.375rem;
   cursor: pointer;
   transition: 0.5s;
 }
 .nav-connect:hover {
   transform: scale(1.05);
+  border-color: #ffffff;
 }
 .nav-menu li {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
   cursor: pointer;
+  text-wrap: nowrap;
 }
 .nav-menu li img {
   display: flex;
@@ -38,26 +68,34 @@
 }
 .anchor-link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .nav-mob-close {
   display: none;
 }
 .nav-mob-open {
+  display: block;
+}
+/* Hide the menu open button when menu is open */
+.nav-menu.open ~ .nav-mob-open {
   display: none;
 }
+/* Show the menu close button when menu is open */
+.nav-menu.open .nav-mob-close {
+  display: block;
+}
 #jun-navbar {
-  height: 10rem;
-  width: 10rem;
-  margin: 1rem;
+  height: 8rem;
+  width: 8rem;
+  margin: 0.25rem;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   cursor: pointer;
   transition: 0.5s;
 }
 #jun-navbar:hover {
   transform: scale(1.05);
-  border-color: #b415ff;
+  border-color: #ffffff;
 }
 /* Tablet and small desktop screens */
 @media (max-width: 768px) {
@@ -92,7 +130,7 @@
     align-items: start;
     top: 0;
     gap: 1.5rem;
-    background-color: #1f0016;
+    background-color:transparent;
     width: 15rem;
     height: 100%;
     z-index: 2;
@@ -102,6 +140,7 @@
   .nav-menu.open {
     right: 0; /* On-screen when menu is open */
   }
+  
   .nav-menu li {
     font-size: 1.875rem;
     padding-left: 2rem;
@@ -148,7 +187,7 @@
     padding-top: 2rem;
     gap: 0rem;
     top: 0;
-    background-color: #1f0016;
+    background-color: transparent;
     z-index: 2; /* Below close button but above other content */
     transition: right 0.5s ease-in-out;
   }
@@ -198,7 +237,7 @@
     padding-top: 2rem;
     gap: 0rem;
     top: 0;
-    background-color: #1f0016;
+    background-color:transparent;
     z-index: 2; /* Below close button but above other content */
     transition: right 0.5s ease-in-out;
   }

@@ -61,7 +61,7 @@
   width: 50%;
   height: 0.5rem;
   border-radius: 0.5rem;
-  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  background: linear-gradient(264deg, #0051ff -5.09%, #0091ff 106.28%);
 }
 /* .about-achievements {
   display: flex;
@@ -121,7 +121,7 @@
   font-size: 1.5rem;
   font-weight: 800;
   /* white-space: nowrap; */
-  background: linear-gradient(270deg, #df8908 50%, #b415ff 100%);
+  background: linear-gradient(270deg, #0051ff 50%, #0091ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -264,7 +264,7 @@
   cursor: pointer;
 }
 #jun-about:hover {
-  border-color: #b415ff;
+  border-color: #0051ff;
 }
 @media only screen and (orientation: landscape) {
   .about {
