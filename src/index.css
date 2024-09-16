@@ -5,6 +5,7 @@
 body {
   min-height: 100vh;
   width: 100%;
+  background-size: 100vw 100vh;
   /* background: white; */
   color: white;
   font-family: 'outfit';
@@ -12,7 +13,7 @@ body {
   background-size: cover; /* Ensures the image covers the whole element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the element */
-  background-attachment: fixed; /* Keeps the background fixed while content scrolls */
+  /* background-attachment: fixed; Keeps the background fixed while content scrolls */
 }
  body::before {
   content: '';
