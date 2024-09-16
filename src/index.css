@@ -12,7 +12,7 @@ body {
   background-size: cover; /* Ensures the image covers the whole element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the element */
-  background-attachment: fixed; 
+  background:fixed; 
 }
  body::before {
   content: '';
