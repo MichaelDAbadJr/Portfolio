@@ -26,7 +26,13 @@ body {
  }
  @media (max-width: 768px) {
   body {
-    background-size: 100% auto; /* Ensure full width on mobile, height auto-adjusts */
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover; /* Ensure full width on mobile, height auto-adjusts */
     background-attachment: scroll; /* Ensure normal background scroll */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
   }
+  
 }
