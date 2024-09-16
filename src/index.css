@@ -8,11 +8,11 @@ body {
   /* background: white; */
   color: white;
   font-family: 'outfit';
-  background: url('/Background1.png');
+  background-image: url('/Background1.png');
   background-size: cover; /* Ensures the image covers the whole element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the element */
-  background-attachment: fixed;
+  background-attachment: fixed; /* Keeps the background fixed while content scrolls */
 }
 body::before {
   content: '';
@@ -21,6 +21,6 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(2, 2, 24, 0.7);
-  z-index: -1;
+  background-color: rgba(2, 2, 24, 0.7); /* Adjust color and transparency */
+  z-index: -1; /* Keeps the overlay behind your content */
 }
