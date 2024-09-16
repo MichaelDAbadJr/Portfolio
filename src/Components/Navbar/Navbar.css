@@ -74,7 +74,7 @@
   display: none;
 }
 .nav-mob-open {
-  display: block;
+  display: none;
 }
 /* Hide the menu open button when menu is open */
 .nav-menu.open ~ .nav-mob-open {
