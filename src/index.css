@@ -8,11 +8,11 @@ body {
   /* background: white; */
   color: white;
   font-family: 'outfit';
-  background-image: url('/Background1.png');
+  background: url('/Background1.png');
   background-size: cover; /* Ensures the image covers the whole element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the element */
-  /* background-attachment: fixed; Keeps the background fixed while content scrolls */
+  background-attachment: fixed; 
 }
  body::before {
   content: '';
