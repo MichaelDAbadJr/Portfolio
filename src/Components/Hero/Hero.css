@@ -121,6 +121,23 @@
 .nav-connect:hover {
   transform: scale(1.05);
 }
+.resume-link {
+  display: inline-block;
+  padding: 1.25rem 1.875rem;
+  background-color: #0d48c8; /* Green */
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.resume-link:hover {
+  background-color: #647fd6; 
+  /* color: black; */
+  transform: scale(1.05);
+  border: 2px solid #fff;
+}
 @media (max-width: 768px) {
   .hero {
     margin-top: 0rem;
