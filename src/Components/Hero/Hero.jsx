@@ -2,14 +2,14 @@ import React from 'react';
 import './Hero.css';
 import profilePic from '../../images/profile-pic.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import banner from '../../assets/junmike.dev-banner2.jpeg';
+// import banner from '../../assets/junmike.dev-banner2.jpeg';
 import resumePDF from '../../assets/Michael Delacruz Abad Jr_Software Developer.pdf';
 
 const Hero = () => {
   return (
     <div id="home" className="hero">
       <img src={profilePic} id="profile-pic" alt="profile-pic" />
-      <img src={banner} id="banner" alt="banner" />
+      {/* <img src={banner} id="banner" alt="banner" /> */}
 
       <h1>
         <span>Welcome! I'm Jun Michael,</span>
@@ -32,15 +32,17 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </div>
+        <div className='hero-resume'>
           <a
+            className="resume-link"
             href={resumePDF}
             target="_blank"
             rel="noopener noreferrer"
             // download="Jun_Michael_Resume.pdf"
-            className="resume-link"
           >
             My resume
           </a>
+          </div>
       </div>
     </div>
   );

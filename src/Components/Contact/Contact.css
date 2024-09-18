@@ -35,15 +35,16 @@
 .contact-left h1 {
   font-size: 80px;
   font-weight: 700;
-  background: linear-gradient(270deg, #0051ff 80%, #0091ff 100%);
+  background: linear-gradient(270deg, #0051ff 80%, #0041ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .contact-left p {
   max-width: 550px;
-  color: #d8d8d8;
+  color: black;
   font-size: 20px;
+  font-weight: 600;
   line-height: 35px;
 }
 .contact-details {
@@ -66,7 +67,7 @@
 }
 
 .contact-right label {
-  color: #d8d8d8;
+  color: black;
   font-size: 22px;
   font-weight: 500;
 }
@@ -96,7 +97,7 @@
   border: none;
   color: white;
   border-radius: 50px;
-  background: linear-gradient(264deg, #0051ff -5.09%, #0091ff 106.28%);
+  background: linear-gradient(264deg, #0051ff -5.09%, #0041ff 106.28%);
   font-size: 22px;
   padding: 20px 60px;
   margin-bottom: 50px;

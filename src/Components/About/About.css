@@ -61,7 +61,7 @@
   width: 50%;
   height: 0.5rem;
   border-radius: 0.5rem;
-  background: linear-gradient(264deg, #0051ff -5.09%, #0091ff 106.28%);
+  background: linear-gradient(264deg, #0051ff -5.09%, #0041ff 106.28%);
 }
 /* .about-achievements {
   display: flex;
@@ -113,22 +113,25 @@
 .tech-stack-section {
   padding: 0.5rem;
   border-radius: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack-section:hover {
+  border: 0.125rem solid #0051ff;
+  background: linear-gradient(45deg, #0051ff, #0091ff);
+  transform: scale(1.05);
+  transition: 0.4s;
 }
 
 .tech-stack-section h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 800;
-  /* white-space: nowrap; */
-  background: linear-gradient(270deg, #0051ff 50%, #0091ff 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: black;
 }
 .tech-stack-section h2:hover {
   transform: scale(1.15);
   transition: 0.3s;
+  color: black;
 }
 
 .tech-stack-section ul {
@@ -238,7 +241,7 @@
     max-width: 100%; /* Ensure it doesn't exceed the viewport width */
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
-  
+
   .about-tech-stacks {
     gap: 1rem; /* Adjust gap for mobile */
     padding: 0.25rem; /* Reduce padding to fit mobile */

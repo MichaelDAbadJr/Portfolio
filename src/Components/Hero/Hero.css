@@ -12,11 +12,11 @@
   height: 12rem;
   width: 12rem;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid black;
   cursor: pointer;
   margin-top: -2rem;
 }
-.hero #banner {
+/* .hero #banner {
   width: 40%;
   min-width:28rem;
   height: auto;
@@ -24,14 +24,13 @@
   border: 2px solid #fff;
   cursor: pointer;
   /* margin-top: rem; */
-  /* Animation setup */
+  /* Animation setup 
   animation: vortexIn 0.70s ease-out forwards;
-  transform: scale(0) rotate(0deg); /*inital state*/
-  opacity: 0; /*initially hidden*/
-}
-@keyframes vortexIn {
+  transform: scale(0) rotate(0deg); 
+  opacity: 0; */
+/* @keyframes vortexIn {
   0% {
-    transform: scale(0) rotate(720deg); /*Start from nothing*/
+    transform: scale(0) rotate(720deg); 
     opacity: 0;
   }
   25% {
@@ -39,31 +38,31 @@
     opacity: 0.15;
   }
   50% {
-    transform: scale(0.35) rotate(360deg); /*mid-point*/
+    transform: scale(0.35) rotate(360deg);
     opacity: 0.35;
   }
   75% {
-    transform: scale(0.70) rotate(180deg); /*mid-point*/
+    transform: scale(0.70) rotate(180deg); 
     opacity: 0.75;
   }
   100% {
-    transform: scale(1) rotate(0deg); /*End fullsize*/
+    transform: scale(1) rotate(0deg); 
     opacity: 1;
   }
-}
+} */
 .hero #profile-pic:hover {
  border: 0.125rem solid #0051ff; 
-  background: linear-gradient(45deg, #0051ff, #009fff);
+  background: linear-gradient(45deg, #0051ff, #0091ff);
   transform: scale(1.05);
   transition: 0.4s;
 }
 
-.hero #banner:hover {
+/* .hero #banner:hover {
  border: 0.125rem solid #0051ff; 
   background: linear-gradient(45deg, #0051ff, #009fff);
   transform: scale(1.05);
   transition: 0.4s;
-}
+} */
 /* 0051ff */
 /* 009fff */
 .hero h1 {
@@ -73,7 +72,7 @@
   font-weight: 600;
 }
 .hero h1 span {
-  background: linear-gradient(270deg, #0051ff 10%, #d2dce2 100%);
+  background: linear-gradient(270deg, #0051ff 10%, #0071ff 100%);
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
@@ -81,7 +80,7 @@
   font-size:xx-large;
 }
 .hero p span {
-  background: linear-gradient(270deg, #0051ff 10%, #d2dce2 100%);
+  background: linear-gradient(270deg, #0051ff 10%, #0071ff 100%);
   background-clip: text;
   font-weight: 900;
   -webkit-background-clip: text;
@@ -103,40 +102,33 @@
 .hero-connect {
   padding: 1rem 1rem;
   border-radius: 50px;
-  background: linear-gradient(264deg, #0051ff -5.09%, #009fff 100%);
+  background-color: #0051ff;
   cursor: pointer;
 }
 .hero-resume {
   padding: 1rem 2rem;
   border-radius: 50px;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   cursor: pointer;
 }
-.hero-connect:hover {
+/* .hero-connect:hover {
   border: 2px solid white;
+} */
+
+.hero-connect:hover {
+  transform: scale(1.05);
 }
-.hero-resume:hover {
-  border-color: #0051ff;
-}
-.nav-connect:hover {
+.resume-link:hover {
   transform: scale(1.05);
 }
 .resume-link {
   display: inline-block;
   padding: 1.25rem 1.875rem;
-  background-color: #0d48c8; /* Green */
-  color: white;
+  background-color: #0051ff; 
+  color: black;
   text-decoration: none;
   border-radius: 40px;
   font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.resume-link:hover {
-  background-color: #647fd6; 
-  /* color: black; */
-  transform: scale(1.05);
-  border: 2px solid #fff;
 }
 @media (max-width: 768px) {
   .hero {
@@ -147,15 +139,15 @@
     width: 12rem;
     height: 12rem;
   }
-  .hero #banner {
+  /* .hero #banner {
     width: 60%;
     min-width: 22rem;
     height: auto;
      border-radius: 4%;
     border: 2px solid #fff;
     cursor: pointer;
-    /* margin-top: rem; */
-  }
+    margin-top: rem;
+  } */
   .hero h1 {
     margin-top: 0rem;
     width: 90%;

@@ -6,15 +6,52 @@ body {
   min-height: 100vh;
   width: 100%;
   /* background: white; */
-  color: white;
+  /* background: repeating-linear-gradient(
+    135deg,
+    #0051ff 0%,
+    #0051ff 10%,
+    #0091ff 10%,
+    #0091ff 20%
+  ); */
+
+  background-color: #e0e0e0;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.1) 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%);
+  background-size: 10px 10px;
+  background-attachment: fixed;
+
+  /* background: repeating-linear-gradient(
+    45deg,
+    #0051ff 25%,
+    #0091ff 25%,
+    #0091ff 50%,
+    #0051ff 50%,
+    #0051ff 75%,
+    #0091ff 75%,
+    #0091ff 100%
+  );
+  background-size: 40px 40px; */
+  /* 
+    background: #f0f4f8; 
+  background-image: linear-gradient(45deg, #0051ff 25%, transparent 25%),
+                    linear-gradient(-45deg, #0091ff 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #0051ff 75%),
+                    linear-gradient(-45deg, transparent 75%, #0091ff 75%);
+  background-size: 20px 20px;
+   */
+  color: black;
   font-family: 'outfit';
-  background-image: url('/Background1.png');
+  /* background-image: url('/Background1.png');
   background-size: cover; /* Ensures the image covers the whole element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling if the image is smaller than the element */
-  background-attachment: fixed; /* Keeps the background fixed while content scrolls */
+  /* background-position: center; Centers the image */
+  /* background-repeat: no-repeat; Prevents tiling if the image is smaller than the element */
+  /* background-attachment: fixed; Keeps the background fixed while content scrolls */
 }
-body::before {
+/* body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -22,5 +59,5 @@ body::before {
   width: 100%;
   height: 100%;
   background-color: rgba(2, 2, 24, 0.7); /* Adjust color and transparency */
-  z-index: -1; /* Keeps the overlay behind your content */
-}
+/* z-index: -1; Keeps the overlay behind your content */
+/* } */
