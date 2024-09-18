@@ -7,23 +7,23 @@
   
   .privacy-policy h1 {
     font-size: 2rem;
-    color: white;
+    color: black;
     margin-bottom: 1rem;
   }
   
   .privacy-policy p {
     font-size: 1rem;
-    color: white;
+    color: black;
     line-height: 1.6;
     margin-bottom: 1rem;
   }
   
   .privacy-policy h2 {
     font-size: 1.5rem;
-    color: white;
+    color: black;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid black;
     padding-bottom: 0.5rem;
   }
   
