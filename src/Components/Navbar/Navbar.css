@@ -45,11 +45,18 @@
   padding: 0.5rem 0.5rem;
   margin: 0.25rem;
   border-radius: 50px;
-  border: 0.125rem solid #000000;
   background-color: #0051ff;
   font-size: 1.375rem;
   cursor: pointer;
   transition: 0.5s;
+  text-align: center; /* Ensures text is centered horizontally */
+  display: flex; /* Allows for vertical and horizontal alignment */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  
+  /* white-space: nowrap; Prevents text from wrapping to the next line */
+  /* overflow: hidden; Hides any text overflow */
+  text-overflow: ellipsis; /* Shows ellipsis ("...") when text overflows */
 }
 .nav-connect:hover {
   transform: scale(1.02);
@@ -68,6 +75,10 @@
 .anchor-link {
   text-decoration: none;
   color: black;
+}
+.nav-connect .anchor-link {
+  text-decoration: none;
+  color: white;
 }
 .nav-mob-close {
   display: none;
