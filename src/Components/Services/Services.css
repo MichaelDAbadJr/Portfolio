@@ -72,15 +72,20 @@
 
 .services-format:hover {
   border: 0.125rem solid black;
-  background: linear-gradient(45deg, #0051ff, #0091ff);
+  background:#0041ff;
   transform: scale(1.05);
   transition: 0.4s;
-  color: black;
+  color: white;
 }
+
 .services-format:hover h2 {
   color: black; /* Change text color to black on hover */
   background: none; /* Remove gradient background */
   -webkit-text-fill-color: black; /* Ensure text color is black in WebKit browsers */
+}
+.services-format:hover p {
+  color: white; /* Change text color to black on hover */
+ 
 }
 
 @media (max-width: 768px) {

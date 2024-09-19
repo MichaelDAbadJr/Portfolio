@@ -52,7 +52,7 @@
 } */
 .hero #profile-pic:hover {
  border: 0.125rem solid #0051ff; 
-  background: linear-gradient(45deg, #0051ff, #0091ff);
+  background: linear-gradient(45deg, #0051ff, #0041ff);
   transform: scale(1.05);
   transition: 0.4s;
 }
