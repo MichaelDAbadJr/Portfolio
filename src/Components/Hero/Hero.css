@@ -65,11 +65,30 @@
 } */
 /* 0051ff */
 /* 009fff */
+@keyframes growAndRotateText {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.2, 0.2, 0.2) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+    transform-style: preserve-3d;
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform-style: preserve-3d;
+  }
+}
 .hero h1 {
   text-align: center;
   width: 70%;
   font-size: 3rem;
   font-weight: 600;
+  font-size: xx-large;
+  display: inline-block;
+  opacity: 0; /* Start with 0 opacity */
+  transform: scale3d(0.5, 0.5, 0.5); /* Start with a smaller scale */
+  animation: growAndRotateText 0.5s ease-out forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
 }
 .hero h1 span {
   background: linear-gradient(270deg, #0051ff 10%, #0071ff 100%);
@@ -91,6 +110,11 @@
   line-height: 1.5rem;
   width: 80%; /* Adjust width for responsive design */
   margin: 0 auto;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5) rotateX(30deg) rotateY(30deg);
+  animation: growAndRotateText 0.85s ease-out forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 0.43s; /* Slightly later than h1 */
 }
 .hero-action {
   display: flex;
