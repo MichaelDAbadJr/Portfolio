@@ -17,27 +17,19 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              With over 3 years of hands-on experience in both Frontend and
-              Backend Development, I have honed my skills in creating dynamic
-              and responsive web applications. My expertise extends from
-              crafting intuitive user interfaces with React.js to developing
-              scalable backend solutions using technologies like Node.js, JWT
-              tokens, bcrypt, and advanced database management.
+              I have honed my skills in creating dynamic and responsive web
+              applications. My expertise extends from crafting intuitive user
+              interfaces with React.js to developing scalable backend API
+              solutions using technologies like Node.js, Express.js, JWT tokens,
+              bcrypt, and database management.
             </p>
             <p>
               I am deeply passionate about full-stack development and love
-              seeing my projects come to life in real-world scenarios. My
-              enthusiasm extends to DevOps, where I enjoy the challenges of
-              deployment and continuous integration. I thrive on solving complex
-              problems and am always eager to contribute to impactful projects
-              that drive success and growth.
-            </p>
-            <p>
-              My journey has allowed me to collaborate with some incredible
-              developers, and I bring that same spirit of teamwork and
-              innovation to every project. I am committed to delivering
-              solutions that are not only functional but also elegant and
-              user-friendly.
+              seeing my projects come to life. My enthusiasm extends to DevOps,
+              where I enjoy the challenges of deployment and continuous
+              integration. I thrive on solving complex problems and am always
+              eager to contribute to impactful projects that drive success and
+              growth.
             </p>
           </div>
           <div className="about-skills">

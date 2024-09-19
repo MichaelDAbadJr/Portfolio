@@ -17,7 +17,7 @@ const Hero = () => {
       <p>
         A dedicated Full Stack Software Engineer with a passion for both
         front-end and back-end development. I love building dynamic, responsive
-        websites with React JS and crafting robust APIs. I bring a holistic
+        websites and crafting robust back-end APIs. I bring a holistic
         approach to software development. Here&rsquo;s a glimpse into my skill
         set and experience:
       </p>
