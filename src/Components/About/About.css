@@ -42,7 +42,10 @@
   border-radius: 0.625rem;
   border: 0.125rem solid black;
 }
-.about-para,
+.about-para p {
+ margin: 0.35rem;
+}
+.about-para:hover,
 .tech-stack-section:hover {
   border: 0.125rem solid black;
   background:#0041ff;
