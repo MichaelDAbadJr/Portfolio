@@ -1,8 +1,56 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This portfolio showcases my work and skills as a developer, featuring projects built with modern web technologies. It serves as a demonstration of my capabilities, design aesthetics, and coding proficiency.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ <a href="https://junmike.dev/" target="_blank">Live Demo on Netlify</a>
+
+## Features
+
+- **Responsive Design:** Optimized for various screen sizes and devices, ensuring a seamless user experience.
+- **Project Showcase:** Highlights a selection of my best projects, with details about technologies used and links to live demos and source code.
+- **Smooth Navigation:** Utilizes smooth scrolling and animations for an engaging browsing experience.
+- **Contact Form:** Allows visitors to get in touch with me directly through the site.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm (or yarn) installed.
+- Familiarity with React, React hooks, HTML, CSS & JavaScript.
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/MichaelDAbadJr/Portfolio
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```sh
+   cd Portfolio
+   ```
+
+3. **Install the dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+   or
+
+   ```
+   yarn install
+   ```
+
+4. **To start the development server, use:**
+   ```sh
+   npm run dev
+   ```
+   or
+   ```
+   yarn dev
+   ```
