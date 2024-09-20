@@ -12,22 +12,28 @@ const About = () => {
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src={profilePic} id="jun-about" />
+          <img
+            src={profilePic}
+            id="jun-about"
+            alt="Profile picture"
+            loading="lazy"
+          />
         </div>
         <div className="about-right">
           <div className="about-para">
             <p>
-              I have honed my skills in creating dynamic and responsive web
-              applications. My expertise extends from crafting intuitive user
-              interfaces with React.js to developing scalable backend API
-              solutions using technologies like Node.js, Express.js, JWT tokens,
-              bcrypt, and database management.
+              My expertise extends from crafting intuitive user interfaces with
+              React.js to developing scalable backend API solutions using
+              Node.js, Express.js, JWT tokens, bcrypt, and database management.
+              My skillset involves leveraging cloud technologies such as Google
+              Cloud Services to enhance functionality and scalability.
             </p>
             <p>
-              I am deeply passionate about full-stack development and love
-              seeing my projects come to life. My enthusiasm extends to DevOps,
-              where I enjoy the challenges of deployment and continuous
-              integration. I thrive on solving complex problems and am always
+              I love seeing my projects come to life. My enthusiasm extends to
+              DevOps, where I enjoy the challenges of deployment and continuous
+              integration. I take pride in having the ability to learn emerging
+              frameworks, technologies and stacks at a high degree of
+              efficiency. I thrive on solving complex problems and am always
               eager to contribute to impactful projects that drive success and
               growth.
             </p>

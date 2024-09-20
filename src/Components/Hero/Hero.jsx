@@ -10,17 +10,17 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profilePic} id="profile-pic" alt="profile-pic" />
       {/* <img src={banner} id="banner" alt="banner" /> */}
-
       <h1>
         <span>Welcome! I'm Jun Michael,</span>
       </h1>
       <p>
-        A dedicated Full Stack Software Engineer with a passion for both
-        front-end and back-end development. I love building dynamic, responsive
-        websites and crafting robust back-end APIs. I bring a holistic
-        approach to software development. Here&rsquo;s a glimpse into my skill
-        set and experience:
+        A dedicated Full Stack Software Engineer with a strong track record of
+        building dynamic responsive websites and crafting robust back-end APIs.
+        My expertise spans both front-end and back-end technologies, and I take
+        a comprehensive approach to software development. Here&rsquo;s a glimpse
+        into my skill set and experience:
       </p>
+
       <p>
         Check out my live applications below, deployed on <span>Netlify</span>,
         and explore the accompanying repositories. Click the links to see my
@@ -32,7 +32,7 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className='hero-resume'>
+        <div className="hero-resume">
           <a
             className="resume-link"
             href={resumePDF}
@@ -42,7 +42,7 @@ const Hero = () => {
           >
             My resume
           </a>
-          </div>
+        </div>
       </div>
     </div>
   );
