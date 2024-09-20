@@ -47,10 +47,24 @@ This portfolio showcases my work and skills as a developer, featuring projects b
    ```
 
 4. **To start the development server, use:**
+
    ```sh
    npm run dev
    ```
+
    or
+
    ```
    yarn dev
    ```
+
+5. **Usage:**
+   Once the development server is running, open your browser and navigate to http://localhost:3000 to view the portfolio.
+
+6. **License:**
+   This project is licensed under the MIT License. See the LICENSE file for details.
+
+7. **Preview:**
+   Here’s a glimpse of my portfolio:
+
+<img src="https://github.com/MichaelDAbadJr/assets/blob/main/Portfolio-Cover.jpg" width="800">
