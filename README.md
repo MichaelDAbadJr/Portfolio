@@ -5,6 +5,7 @@
 This portfolio showcases my work and skills as a developer, featuring projects built with modern web technologies. It serves as a demonstration of my capabilities, design aesthetics, and coding proficiency.
 
 <a href="https://junmike.dev/" target="_blank">View Live Website</a>
+<img src="https://github.com/MichaelDAbadJr/assets/blob/main/Portfolio-Cover.jpg" width="800">
 
 ## Features
 
@@ -59,12 +60,7 @@ This portfolio showcases my work and skills as a developer, featuring projects b
    ```
 
 5. **Usage:**
-   Once the development server is running, open your browser and navigate to http://localhost:3000 to view the portfolio.
+   Once the development server is running, open your browser and navigate to http://localhost:5173 or the appropriate localhost on your machine to view the portfolio.
 
 6. **License:**
    This project is licensed under the MIT License. See the LICENSE file for details.
-
-7. **Preview:**
-   Here’s a glimpse of my portfolio:
-
-<img src="https://github.com/MichaelDAbadJr/assets/blob/main/Portfolio-Cover.jpg" width="800">
