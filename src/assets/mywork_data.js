@@ -10,8 +10,8 @@ const mywork_data = [
     w_no: 1,
     w_name: 'Picture Place App',
     w_img: project1_img,
-    frontend_repo: 'https://github.com/MichaelDAbadJr/PicturePlaceApp',
-    backend_repo: 'https://github.com/MichaelDAbadJr/PicturePlaceApp',
+    frontend_repo: 'https://github.com/MichaelDAbadJr/PicturePlaceApp-Frontend',
+    backend_repo: 'https://github.com/MichaelDAbadJr/PicturePlaceApp-Backend',
     netlify_url: 'https://junmike-picture-place.netlify.app'
   },
   {
