@@ -78,7 +78,7 @@ const Navbar = () => {
             href="#work"
             onClick={() => handleMenuClick('work')}
           >
-            <p>Portfolio</p>
+            <p>Work</p>
           </AnchorLink>
           {activeMenu === 'work' && (
             <img src={underline} alt="Underline" className="underline" />

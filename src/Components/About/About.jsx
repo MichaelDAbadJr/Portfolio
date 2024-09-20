@@ -1,16 +1,42 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './About.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import profilePic from '../../images/profile-pic.jpg';
 
 const About = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.05 }); // You can adjust the threshold value
+
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
+
   return (
-    <div id="about" className="about">
-      <div className="about-title">
+    <div id="about" className="about fade-in" ref={sectionRef}>
+      <div className="about-title"   >
         <h1>About me</h1>
-        <img src={theme_pattern} alt="" />
+        <img src={theme_pattern} alt="theme-pattern" />
       </div>
-      <div className="about-sections">
+      <div className="about-sections"  >
         <div className="about-left">
           <img
             src={profilePic}
@@ -62,7 +88,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="about-tech-stacks-container">
+      <div className="about-tech-stacks-container ">
         <div className="about-tech-stacks">
           <div className="tech-stack-section">
             <h2>Frontend Stack</h2>

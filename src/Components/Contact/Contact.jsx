@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Contact.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import mail_icon from '../../assets/mail_icon.svg';
@@ -6,6 +6,31 @@ import location_icon from '../../assets/location_icon.svg';
 import call_icon from '../../assets/call_icon.svg';
 
 const Contact = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.05 }); // Adjust the threshold as needed
+
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
   const onSubmit = async event => {
     event.preventDefault();
     // setResult('Sending....');
@@ -31,7 +56,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div id="contact" className="contact">
+      <div id="contact" className="contact zoom-in" ref={sectionRef}>
         <div className="contact-title">
           <h1>Get in touch</h1>
           <img src={theme_pattern} alt="" />

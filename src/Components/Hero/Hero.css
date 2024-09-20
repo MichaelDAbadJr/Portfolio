@@ -86,9 +86,9 @@
   display: inline-block;
   opacity: 0; /* Start with 0 opacity */
   transform: scale3d(0.5, 0.5, 0.5); /* Start with a smaller scale */
-  animation: growAndRotateText 0.5s ease-out forwards;
+  animation: growAndRotateText 0.3s ease-out forwards;
   animation-fill-mode: forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.23s;
 }
 .hero h1 span {
   background: linear-gradient(270deg, #0051ff 10%, #0071ff 100%);
@@ -112,9 +112,9 @@
   margin: 0 auto;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5) rotateX(30deg) rotateY(30deg);
-  animation: growAndRotateText 0.85s ease-out forwards;
+  animation: growAndRotateText 0.5s ease-out forwards;
   animation-fill-mode: forwards;
-  animation-delay: 0.43s; /* Slightly later than h1 */
+  animation-delay: 0.33s; /* Slightly later than h1 */
 }
 .hero-action {
   display: flex;

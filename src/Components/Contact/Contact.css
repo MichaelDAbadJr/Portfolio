@@ -108,6 +108,16 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8); /* Start smaller */
+  transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+}
+
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1); /* Zoom to original size */
+}
 @media(max-width:768px) {
     .contact {
         gap: 50px;
