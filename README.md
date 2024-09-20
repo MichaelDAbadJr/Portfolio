@@ -5,7 +5,7 @@
 This portfolio showcases my work and skills as a developer, featuring projects built with modern web technologies. It serves as a demonstration of my capabilities, design aesthetics, and coding proficiency.
 
 <a href="https://junmike.dev/" target="_blank">View Live Website</a>
-<img src="https://github.com/MichaelDAbadJr/assets/blob/main/Portfolio-Cover.jpg" width="800">
+<img src="https://github.com/MichaelDAbadJr/assets/blob/main/Portfolio-Cover.jpg" width="600">
 
 ## Features
 
