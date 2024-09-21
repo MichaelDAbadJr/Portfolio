@@ -26,11 +26,6 @@ body::before {
   background-repeat: no-repeat;
   z-index: -1; 
  }
- @media screen and (max-width: 430px) {
-  body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  }
-}
 
 /* background-color: #e0e0e0;
   background-image: linear-gradient(
