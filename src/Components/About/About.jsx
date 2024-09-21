@@ -45,7 +45,7 @@ const About = () => {
             if (entry.isIntersecting) {
               setTimeout(() => {
                 entry.target.classList.add('show');
-              }, index * 200); // Staggered effect
+              }, index * 300); // Increased delay for the shuffle effect
             } else {
               entry.target.classList.remove('show');
             }

@@ -110,7 +110,7 @@
 }
 .slide-in-right {
   opacity: 0;
-  transform: translateX(15px); /* Start off to the right */
+  transform: translateX(-50px); /* Start off to the right */
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 

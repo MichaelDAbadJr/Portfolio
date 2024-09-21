@@ -31,9 +31,11 @@ const Contact = () => {
       }
     };
   }, []);
+
   const onSubmit = async event => {
     event.preventDefault();
     // setResult('Sending....');
+    try {
     const formData = new FormData(event.target);
 
     formData.append('access_key', 'e6086223-8846-4cf7-b8a8-5d68f8ff0db6');
@@ -49,10 +51,14 @@ const Contact = () => {
     //   setResult('Form Submitted Successfully');
       event.target.reset();
     } else {
+      // Handle API- level error
       console.log('Error', data);
     //   setResult(data.message);
     }
-  };
+  } catch (error) {
+    // Handle network error or other unexpected errors
+    console.error('There was an error with the submission:', error);
+  }
 
   return (
     <div>
