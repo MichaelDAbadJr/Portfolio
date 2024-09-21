@@ -56,7 +56,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div id="contact" className="contact zoom-in" ref={sectionRef}>
+      <div id="contact" className="contact slide-in-right" ref={sectionRef}>
         <div className="contact-title">
           <h1>Get in touch</h1>
           <img src={theme_pattern} alt="" />

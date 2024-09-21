@@ -33,7 +33,7 @@ const Services = () => {
     };
   }, []);
   return (
-    <div id="services" className="services slide-in-right" ref={sectionRef}>
+    <div id="services" className="services zoom-in" ref={sectionRef}>
       <div className="services-title">
         <h1>My Services</h1>
         <img src={theme_pattern} alt="" />

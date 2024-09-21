@@ -87,16 +87,17 @@
   color: white; /* Change text color to black on hover */
  
 }
-.slide-in-right {
+.zoom-in {
   opacity: 0;
-  transform: translateX(100px); /* Start off to the right */
+  transform: scale(0.8); /* Start smaller */
   transition: opacity 0.5s ease-out, transform 0.3s ease-out;
 }
 
-.slide-in-right.visible {
+.zoom-in.visible {
   opacity: 1;
-  transform: translateX(0); /* Slide into place */
+  transform: scale(1); /* Zoom to original size */
 }
+
 
 @media (max-width: 768px) {
   .services {
@@ -151,7 +152,7 @@
   }
 
   .services-format {
-    padding: 1.25rem;
+    padding: 0.75rem;
     gap: 1.25rem;
   }
 

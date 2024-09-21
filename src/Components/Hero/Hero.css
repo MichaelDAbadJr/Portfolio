@@ -24,7 +24,7 @@
   border: 2px solid #fff;
   cursor: pointer;
   /* margin-top: rem; */
-  /* Animation setup 
+/* Animation setup 
   animation: vortexIn 0.70s ease-out forwards;
   transform: scale(0) rotate(0deg); 
   opacity: 0; */
@@ -51,7 +51,7 @@
   }
 } */
 .hero #profile-pic:hover {
- border: 0.125rem solid #0051ff; 
+  border: 0.125rem solid #0051ff;
   background: linear-gradient(45deg, #0051ff, #0041ff);
   transform: scale(1.05);
   transition: 0.4s;
@@ -68,12 +68,14 @@
 @keyframes growAndRotateText {
   0% {
     opacity: 0;
-    transform: translate3d(0px, 0px, 0px) scale3d(0.2, 0.2, 0.2) rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+    transform: translate3d(0px, 0px, 0px) scale3d(0.2, 0.2, 0.2) rotateX(45deg)
+      rotateY(45deg) rotateZ(0deg);
     transform-style: preserve-3d;
   }
   100% {
     opacity: 1;
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg);
     transform-style: preserve-3d;
   }
 }
@@ -96,7 +98,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 .hero p span {
   background: linear-gradient(270deg, #0051ff 10%, #0071ff 100%);
@@ -150,7 +152,7 @@
 .resume-link {
   display: inline-block;
   padding: 1.25rem 1.875rem;
-  background-color: #0051ff; 
+  background-color: #0051ff;
   color: white;
   text-decoration: none;
   border-radius: 40px;
@@ -196,7 +198,7 @@
   }
   .hero-connect,
   .hero-resume {
-    padding: 1.25rem 1.875rem; 
+    padding: 1.25rem 1.875rem;
     border-radius: 40px;
   }
 }
@@ -204,7 +206,7 @@
   .hero {
     margin-top: 0rem;
   }
-  .hero #profile-pic {
+  .hero .hero #profile-pic {
     margin-top: 0rem;
     width: 12rem;
     height: 12rem;
@@ -223,12 +225,16 @@
     gap: 1rem;
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 2.5rem;
+    margin: 0.25;
   }
-  .hero-connect,
+
   .hero-resume {
-    padding: 1.25rem 1.875rem; 
-    border-radius: 40px;
+    padding: 0.25rem 0.25rem;
+
+  }
+  .hero-connect {
+    padding: 1.25rem 0.5rem;
+
   }
 }
 @media only screen and (orientation: landscape) {
@@ -258,7 +264,7 @@
   }
   .hero-connect,
   .hero-resume {
-    padding: 1.25rem 1.875rem; 
+    padding: 1.25rem 1.875rem;
     border-radius: 40px;
   }
 }

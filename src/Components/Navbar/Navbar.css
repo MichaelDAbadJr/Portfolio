@@ -125,6 +125,7 @@
     position: fixed;
     right: 1.5rem;
     top: 1.5rem;
+    z-index: 10;
   }
   .nav-mob-close {
     display: block;
@@ -208,8 +209,10 @@
 
   .nav-menu li {
     font-size: 1rem;
-    padding-left: 0.5rem;
+    padding-left: 0.0015rem;
+    margin-right: 0.015rem ;
   }
+
 }
 @media only screen and (max-device-width: 932px) and (orientation: landscape) and (max-device-height: 430px) {
   #jun-navbar {
