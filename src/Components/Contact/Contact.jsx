@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Contact.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import mail_icon from '../../assets/mail_icon.svg';
@@ -7,6 +7,7 @@ import call_icon from '../../assets/call_icon.svg';
 
 const Contact = () => {
   const sectionRef = useRef(null);
+  const [result, setResult] = useState('');
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -19,7 +20,7 @@ const Contact = () => {
           entry.target.classList.remove('visible');
         }
       });
-    }, { threshold: 0.05 }); // Adjust the threshold as needed
+    }, { threshold: 0.05 }); 
 
     if (section) {
       observer.observe(section);
@@ -34,7 +35,7 @@ const Contact = () => {
 
   const onSubmit = async event => {
     event.preventDefault();
-    // setResult('Sending....');
+    setResult('Sending....');
     try {
     const formData = new FormData(event.target);
 
@@ -48,17 +49,19 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-    //   setResult('Form Submitted Successfully');
+      setResult('Form Submitted Successfully');
       event.target.reset();
     } else {
       // Handle API- level error
       console.log('Error', data);
-    //   setResult(data.message);
+      setResult(data.message);
     }
   } catch (error) {
     // Handle network error or other unexpected errors
     console.error('There was an error with the submission:', error);
+    setResult('There was an error with the submission.');
   }
+};
 
   return (
     <div>
