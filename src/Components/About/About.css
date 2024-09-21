@@ -139,27 +139,15 @@
   transform: scale(1.05);
   transition: 0.4s;
 }
- /* Animation styling */
- opacity: 0;
- transform: translateY(50px) scale(0.9);
- transition: opacity 0.3s ease, transform 0.5s ease;
- animation: shuffleIn 1s ease forwards;
-}
-
-@keyframes shuffleIn {
- 0% {
-   opacity: 0;
-   transform: translateY(50px) scale(0.9);
- }
- 100% {
-   opacity: 1;
-   transform: translateY(0) scale(1);
- }
+.tech-stack-section {
+  opacity: 0;
+  transform: translateY(100px) scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .tech-stack-section.show {
- opacity: 1;
- transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .tech-stack-section h2 {
