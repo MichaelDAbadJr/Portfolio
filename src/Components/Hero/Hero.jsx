@@ -1,15 +1,51 @@
-import React from 'react';
+import { useEffect, useRef } from 'react';
 import './Hero.css';
 import profilePic from '../../images/profile-pic.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-// import banner from '../../assets/junmike.dev-banner2.jpeg';
 import resumePDF from '../../assets/Michael Delacruz Abad Jr_Software Developer.pdf';
-
+import githubSVG from '../../assets/github-mark.svg';
 const Hero = () => {
+  const heroActionRef = useRef(null);
+  const elementsRef = useRef([]);
+
+  useEffect(() => {
+    const options = {
+      root: null, // Use the viewport as the root
+      threshold: 0.1 // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add staggered show effect
+          elementsRef.current.forEach((el, index) => {
+            setTimeout(() => {
+              el.classList.add('show');
+            }, index * 300); // Delay each element's appearance by 300ms
+          });
+        } else {
+          // Remove 'show' class when scrolling up or out of view
+          elementsRef.current.forEach(el => {
+            el.classList.remove('show');
+          });
+        }
+      });
+    }, options);
+
+    if (heroActionRef.current) {
+      observer.observe(heroActionRef.current);
+    }
+
+    return () => {
+      if (heroActionRef.current) {
+        observer.unobserve(heroActionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div id="home" className="hero">
       <img src={profilePic} id="profile-pic" alt="profile-pic" />
-      {/* <img src={banner} id="banner" alt="banner" /> */}
       <h1>
         <span>Welcome! I'm Jun Michael,</span>
       </h1>
@@ -26,13 +62,19 @@ const Hero = () => {
         and explore the accompanying repositories. Click the links to see my
         work in action!
       </p>
-      <div className="hero-action">
-        <div className="hero-connect">
+      <div className="hero-action" ref={heroActionRef}>
+        <div
+          className="hero-connect"
+          ref={element => (elementsRef.current[0] = element)}
+        >
           <AnchorLink className="anchor-link" offset={50} href="#contact">
-            Connect with me
+            Let's Connect
           </AnchorLink>
         </div>
-        <div className="hero-resume">
+        <div
+          className="hero-resume"
+          ref={element => (elementsRef.current[1] = element)}
+        >
           <a
             className="resume-link"
             href={resumePDF}
@@ -40,7 +82,20 @@ const Hero = () => {
             rel="noopener noreferrer"
             // download="Jun_Michael_Resume.pdf"
           >
-            My resume
+            My Resume
+          </a>
+        </div>
+        <div ref={element => (elementsRef.current[2] = element)}>
+          <a
+            href="https://github.com/MichaelDAbadJr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={githubSVG}
+              alt="GitHub Logo"
+              style={{ width: '50px', height: '50px' }}
+            />
           </a>
         </div>
       </div>

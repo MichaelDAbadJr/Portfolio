@@ -50,10 +50,8 @@
     opacity: 1;
   }
 } */
-.hero #profile-pic:hover {
-  border: 0.125rem solid #0051ff;
-  background: linear-gradient(45deg, #0051ff, #0041ff);
-  transform: scale(1.05);
+.hero img:hover {
+  transform: scale(1.07);
   transition: 0.4s;
 }
 
@@ -125,6 +123,16 @@
   font-weight: 500;
   margin-bottom: 3rem;
 }
+.hero-action div {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-50px); /* Slide from the left */
+  transition: opacity 0.3s ease-out, transform 0.75s ease-out;
+}
+
+.hero-action div.show {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* No translation */
+}
 .hero-connect {
   padding: 1rem 1rem;
   border-radius: 50px;
@@ -166,7 +174,7 @@
   .hero {
     margin-top: 0rem;
   }
-  .hero #profile-pic {
+  .hero img {
     /* margin-top: 120px; */
     width: 12rem;
     height: 12rem;
@@ -206,7 +214,7 @@
   .hero {
     margin-top: 0rem;
   }
-  .hero .hero #profile-pic {
+  .hero img{
     margin-top: 0rem;
     width: 12rem;
     height: 12rem;

@@ -120,6 +120,9 @@
   .nav-connect {
     display: none;
   }
+  .nav-menu.open img {
+    display: none;
+  }
   .nav-mob-open {
     display: block;
     position: fixed;
@@ -211,6 +214,9 @@
     font-size: 1rem;
     padding-left: 0.0015rem;
     margin-right: 0.015rem ;
+  }
+  .nav-menu.open img {
+    display: none;
   }
 
 }
