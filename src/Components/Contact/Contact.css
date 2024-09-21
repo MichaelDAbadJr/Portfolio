@@ -111,7 +111,7 @@
 .slide-in-right {
   opacity: 0;
   transform: translateX(15px); /* Start off to the right */
-  transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .slide-in-right.visible {

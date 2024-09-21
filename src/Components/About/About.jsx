@@ -5,19 +5,24 @@ import profilePic from '../../images/profile-pic.jpg';
 
 const About = () => {
   const sectionRef = useRef(null);
+  const techStackRef = useRef(null);
 
+  // First useEffect for sectionRef
   useEffect(() => {
     const section = sectionRef.current;
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
-        }
-      });
-    }, { threshold: 0.05 }); // You can adjust the threshold value
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      },
+      { threshold: 0.05 }
+    ); // You can adjust the threshold value
 
     if (section) {
       observer.observe(section);
@@ -30,13 +35,43 @@ const About = () => {
     };
   }, []);
 
+    // Second useEffect for techStackRef
+    useEffect(() => {
+      const techStackSections = techStackRef.current?.querySelectorAll('.tech-stack-section');
+  
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add('show');
+              }, index * 200); // Staggered effect
+            } else {
+              entry.target.classList.remove('show');
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+  
+      if (techStackSections) {
+        techStackSections.forEach(section => observer.observe(section));
+      }
+  
+      return () => {
+        if (techStackSections) {
+          techStackSections.forEach(section => observer.unobserve(section));
+        }
+      };
+    }, []);
+
   return (
     <div id="about" className="about fade-in" ref={sectionRef}>
-      <div className="about-title"   >
+      <div className="about-title">
         <h1>About me</h1>
         <img src={theme_pattern} alt="theme-pattern" />
       </div>
-      <div className="about-sections"  >
+      <div className="about-sections">
         <div className="about-left">
           <img
             src={profilePic}
@@ -88,7 +123,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="about-tech-stacks-container ">
+      <div className="about-tech-stacks-container" ref={techStackRef}>
         <div className="about-tech-stacks">
           <div className="tech-stack-section">
             <h2>Frontend Stack</h2>

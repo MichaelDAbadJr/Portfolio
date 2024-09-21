@@ -119,6 +119,7 @@
 .about-tech-stacks {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
   margin: 1rem;
   gap: 2.75rem;
   padding: 0.5rem;
@@ -137,6 +138,28 @@
   background: linear-gradient(45deg, #0051ff, #0091ff);
   transform: scale(1.05);
   transition: 0.4s;
+}
+ /* Animation styling */
+ opacity: 0;
+ transform: translateY(50px) scale(0.9);
+ transition: opacity 0.3s ease, transform 0.5s ease;
+ animation: shuffleIn 1s ease forwards;
+}
+
+@keyframes shuffleIn {
+ 0% {
+   opacity: 0;
+   transform: translateY(50px) scale(0.9);
+ }
+ 100% {
+   opacity: 1;
+   transform: translateY(0) scale(1);
+ }
+}
+
+.tech-stack-section.show {
+ opacity: 1;
+ transform: translateY(0) scale(1);
 }
 
 .tech-stack-section h2 {
@@ -163,7 +186,7 @@
 .fade-in {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .fade-in.visible {
