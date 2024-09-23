@@ -28,31 +28,31 @@ const mywork_data = [
     w_img: project3_img,
     frontend_repo: 'https://github.com/MichaelDAbadJr/TicTacToe/',
     netlify_url: 'https://junmike-tictactoe.netlify.app/'
-  },
-  {
-    w_no: 4,
-    w_name: 'Web design',
-    w_img: project4_img,
-    frontend_repo: '',
-    backend_repo: '',
-    netlify_url: ''
-  },
-  {
-    w_no: 5,
-    w_name: 'Web design',
-    w_img: project5_img,
-    frontend_repo: '',
-    backend_repo: '',
-    netlify_url: ''
-  },
-  {
-    w_no: 6,
-    w_name: 'Web design',
-    w_img: project6_img,
-    frontend_repo: '',
-    backend_repo: '',
-    netlify_url: ''
   }
+  // {
+  //   w_no: 4,
+  //   w_name: 'Web design',
+  //   w_img: project4_img,
+  //   frontend_repo: '',
+  //   backend_repo: '',
+  //   netlify_url: ''
+  // },
+  // {
+  //   w_no: 5,
+  //   w_name: 'Web design',
+  //   w_img: project5_img,
+  //   frontend_repo: '',
+  //   backend_repo: '',
+  //   netlify_url: ''
+  // },
+  // {
+  //   w_no: 6,
+  //   w_name: 'Web design',
+  //   w_img: project6_img,
+  //   frontend_repo: '',
+  //   backend_repo: '',
+  //   netlify_url: ''
+  // }
 ];
 
 export default mywork_data;
