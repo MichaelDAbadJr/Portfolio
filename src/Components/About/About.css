@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  margin: 5rem 10.625rem;
+  margin: 2rem 2rem;
 }
 .about-title {
   position: relative;
@@ -26,6 +26,16 @@
 .about-sections {
   display: flex;
   gap: 5rem;
+}
+#jun-about {
+  width: 100%; /* Makes the image responsive */
+  max-width: 62rem;
+  height: auto; /* Maintains aspect ratio */
+  border: 2px solid black;
+  cursor: pointer;
+}
+#jun-about:hover {
+  border-color: #0051ff;
 }
 .about-right {
   display: flex;
@@ -303,16 +313,6 @@
   .about-achievement p {
     font-size: 0.875rem;
   }*/
-}
-#jun-about {
-  height: 12rem;
-  width: 12rem;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  cursor: pointer;
-}
-#jun-about:hover {
-  border-color: #0051ff;
 }
 @media only screen and (orientation: landscape) {
   .about {

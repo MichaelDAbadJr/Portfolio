@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './About.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
-import profilePic from '../../images/profile-pic.jpg';
+import aboutImg from '../../assets/about_img.jpg';
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -74,7 +74,7 @@ const About = () => {
       <div className="about-sections">
         <div className="about-left">
           <img
-            src={profilePic}
+            src={aboutImg}
             id="jun-about"
             alt="Profile picture"
             loading="lazy"

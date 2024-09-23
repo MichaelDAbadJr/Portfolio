@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './Hero.css';
-import profilePic from '../../images/profile-pic.jpg';
+import profilePic from '../../assets/hero_img.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import resumePDF from '../../assets/Michael Delacruz Abad Jr_Software Developer.pdf';
 import githubSVG from '../../assets/github-mark.svg';

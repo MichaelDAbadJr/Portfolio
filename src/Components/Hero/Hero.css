@@ -8,13 +8,11 @@
 }
 
 .hero #profile-pic {
-  /* margin-top: 2rem; Space from top */
-  height: 12rem;
-  width: 12rem;
-  border-radius: 50%;
+  width: 100%; /* Makes the image responsive */
+  max-width: 24rem;
+  height: auto; /* Maintains aspect ratio */
   border: 2px solid black;
   cursor: pointer;
-  margin-top: -2rem;
 }
 /* .hero #banner {
   width: 40%;
@@ -174,10 +172,10 @@
   .hero {
     margin-top: 0rem;
   }
-  .hero img {
-    /* margin-top: 120px; */
-    width: 12rem;
-    height: 12rem;
+  .hero #profile-pic {
+    width: 100%; /* Makes the image responsive */
+    max-width: 18rem;
+    height: auto; /* Maintains aspect ratio */
   }
   /* .hero #banner {
     width: 60%;
@@ -214,10 +212,10 @@
   .hero {
     margin-top: 0rem;
   }
-  .hero img{
-    margin-top: 0rem;
-    width: 12rem;
-    height: 12rem;
+  .hero #profile-pic {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
   }
   .hero h1 {
     margin-top: 0rem;
@@ -238,21 +236,14 @@
 
   .hero-resume {
     padding: 0.25rem 0.25rem;
-
   }
   .hero-connect {
     padding: 1.25rem 0.5rem;
-
   }
 }
 @media only screen and (orientation: landscape) {
   .hero {
     margin-top: 0rem;
-  }
-  .hero #profile-pic {
-    margin-top: 0rem;
-    width: 12rem;
-    height: 12rem;
   }
   .hero h1 {
     margin-top: 0rem;
