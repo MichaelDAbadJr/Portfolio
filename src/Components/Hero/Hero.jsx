@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <div id="home" className="hero">
-      <img src={profilePic} id="profile-pic" alt="profile-pic" />
+      <img src={profilePic} id="profile-pic" alt="profile-pic"  onLoad={(e) => e.target.style.opacity = '1'}/>
       <h1>
         <span>Welcome! I'm Jun Michael,</span>
       </h1>
