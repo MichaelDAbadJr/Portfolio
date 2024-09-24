@@ -50,7 +50,7 @@ const Hero = () => {
         <span>Welcome! I'm Jun Michael,</span>
       </h1>
       <p>
-        A dedicated Full Stack Software Engineer with a strong track record of
+        A passionate Full Stack Software Engineer with a strong track record of
         building dynamic responsive websites and crafting robust back-end APIs.
         My expertise spans both front-end and back-end technologies, and I take
         a comprehensive approach to software development. Here&rsquo;s a glimpse

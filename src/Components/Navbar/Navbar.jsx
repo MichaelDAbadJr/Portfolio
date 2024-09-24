@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/junmike.svg';
-import banner from '../../assets/junmike.dev-banner.jpeg';
 import underline from '../../assets/nav_underline.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';

@@ -9,10 +9,11 @@
 
 .hero #profile-pic {
   width: 100%; /* Makes the image responsive */
-  max-width: 24rem;
+  max-width: 16rem;
   height: auto; /* Maintains aspect ratio */
   border: 2px solid black;
   cursor: pointer;
+  margin-top: 0.5rem;
 }
 /* .hero #banner {
   width: 40%;
@@ -174,7 +175,7 @@
   }
   .hero #profile-pic {
     width: 100%; /* Makes the image responsive */
-    max-width: 18rem;
+    max-width: 15.5rem;
     height: auto; /* Maintains aspect ratio */
   }
   /* .hero #banner {
@@ -214,7 +215,7 @@
   }
   .hero #profile-pic {
     width: 100%;
-    max-width: 18rem;
+    max-width: 14rem;
     height: auto;
   }
   .hero h1 {
