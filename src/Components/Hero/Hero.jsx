@@ -4,7 +4,9 @@ import profilePic from '../../assets/hero_img.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import resumePDF from '../../assets/Michael Delacruz Abad Jr_Software Developer.pdf';
 import githubSVG from '../../assets/github-mark.svg';
+import linkedInSVG from '../../assets/linkedin.svg';
 const Hero = () => {
+  
   const heroActionRef = useRef(null);
   const elementsRef = useRef([]);
 
@@ -93,6 +95,19 @@ const Hero = () => {
           >
             <img
               src={githubSVG}
+              alt="GitHub Logo"
+              style={{ width: '50px', height: '50px' }}
+            />
+          </a>
+        </div>
+        <div ref={element => (elementsRef.current[3] = element)}>
+          <a
+            href="https://www.linkedin.com/in/michael-jun-abad-dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={linkedInSVG}
               alt="GitHub Logo"
               style={{ width: '50px', height: '50px' }}
             />
