@@ -1,9 +1,6 @@
 import project1_img from '../assets/PicturePlace-Cover.jpg';
 import project2_img from '../assets/FoodOrder-Cover.jpg';
 import project3_img from '../assets/TicTacToe-Cover.jpg';
-import project4_img from '../assets/project_4.svg';
-import project5_img from '../assets/project_5.svg';
-import project6_img from '../assets/project_6.svg';
 
 const mywork_data = [
   {
