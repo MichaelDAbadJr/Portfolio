@@ -26,7 +26,7 @@ const mywork_data = [
     w_img: project3_img,
     frontend_repo: 'https://github.com/MichaelDAbadJr/TicTacToe/',
     netlify_url: 'https://junmike-tictactoe.netlify.app/'
-  }
+  },
   {
     w_no: 4,
     w_name: 'Investment Calculator',
