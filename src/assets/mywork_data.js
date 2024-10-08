@@ -1,7 +1,7 @@
 import project1_img from '../assets/PicturePlace-Cover.jpg';
 import project2_img from '../assets/FoodOrder-Cover.jpg';
 import project3_img from '../assets/TicTacToe-Cover.jpg';
-import project4_img from '../assets/InvestmentCalculator-Cover.jpg';
+import project4_img from '../assets/InvestmentCalc-Cover.jpg';
 
 const mywork_data = [
   {
