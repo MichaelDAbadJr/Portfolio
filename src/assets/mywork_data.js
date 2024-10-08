@@ -1,6 +1,7 @@
 import project1_img from '../assets/PicturePlace-Cover.jpg';
 import project2_img from '../assets/FoodOrder-Cover.jpg';
 import project3_img from '../assets/TicTacToe-Cover.jpg';
+import project4_img from '../assets/InvestmentCalculator-Cover.jpg';
 
 const mywork_data = [
   {
@@ -26,14 +27,13 @@ const mywork_data = [
     frontend_repo: 'https://github.com/MichaelDAbadJr/TicTacToe/',
     netlify_url: 'https://junmike-tictactoe.netlify.app/'
   }
-  // {
-  //   w_no: 4,
-  //   w_name: 'Web design',
-  //   w_img: project4_img,
-  //   frontend_repo: '',
-  //   backend_repo: '',
-  //   netlify_url: ''
-  // },
+  {
+    w_no: 4,
+    w_name: 'Investment Calculator',
+    w_img: project4_img,
+    frontend_repo: 'https://github.com/MichaelDAbadJr/InvestmentCalculator/',
+    netlify_url: 'https://junmike-investment-calc.netlify.app/'
+  }
   // {
   //   w_no: 5,
   //   w_name: 'Web design',

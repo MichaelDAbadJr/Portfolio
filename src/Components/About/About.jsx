@@ -76,7 +76,7 @@ const About = () => {
           <img
             src={aboutImg}
             id="jun-about"
-            alt="Profile picture"
+            alt="about img"
             loading="lazy"
           />
         </div>
