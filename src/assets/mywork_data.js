@@ -2,6 +2,7 @@ import project1_img from '../assets/PicturePlace-Cover.jpg';
 import project2_img from '../assets/FoodOrder-Cover.jpg';
 import project3_img from '../assets/TicTacToe-Cover.jpg';
 import project4_img from '../assets/InvestmentCalc-Cover.jpg';
+import project5_img from '../assets/Quiz-Cover.jpg';
 
 const mywork_data = [
   {
@@ -33,15 +34,14 @@ const mywork_data = [
     w_img: project4_img,
     frontend_repo: 'https://github.com/MichaelDAbadJr/InvestmentCalculator/',
     netlify_url: 'https://junmike-investment-calc.netlify.app/'
+  },
+  {
+    w_no: 5,
+    w_name: 'Quiz',
+    w_img: project5_img,
+    frontend_repo: 'https://github.com/MichaelDAbadJr/QuizApp/',
+    netlify_url: 'https://junmike-quiz.netlify.app/'
   }
-  // {
-  //   w_no: 5,
-  //   w_name: 'Web design',
-  //   w_img: project5_img,
-  //   frontend_repo: '',
-  //   backend_repo: '',
-  //   netlify_url: ''
-  // },
   // {
   //   w_no: 6,
   //   w_name: 'Web design',
