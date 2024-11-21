@@ -73,7 +73,7 @@ const Hero = () => {
             Let's Connect
           </AnchorLink>
         </div>
-        <div
+        {/* <div
           className="hero-resume"
           ref={element => (elementsRef.current[1] = element)}
         >
@@ -86,7 +86,7 @@ const Hero = () => {
           >
             My Resume
           </a>
-        </div>
+        </div> */}
         <div ref={element => (elementsRef.current[2] = element)}>
           <a
             href="https://github.com/MichaelDAbadJr"
@@ -100,7 +100,7 @@ const Hero = () => {
             />
           </a>
         </div>
-        <div ref={element => (elementsRef.current[3] = element)}>
+        {/* <div ref={element => (elementsRef.current[3] = element)}>
           <a
             href="https://www.linkedin.com/in/michael-jun-abad-dev/"
             target="_blank"
@@ -112,7 +112,7 @@ const Hero = () => {
               style={{ width: '50px', height: '50px' }}
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
