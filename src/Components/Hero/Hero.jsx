@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './Hero.css';
-import profilePic from '../../assets/hero_img.jpg';
+// import profilePic from '../../assets/hero_img.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 // import resumePDF from '../../assets/Michael Delacruz Abad Jr_Software Developer.pdf';
 import githubSVG from '../../assets/github-mark.svg';
@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
     <div id="home" className="hero">
-      <img src={profilePic} id="profile-pic" alt="profile-pic"  onLoad={(e) => e.target.style.opacity = '1'}/>
+      {/* <img src={profilePic} id="profile-pic" alt="profile-pic"  onLoad={(e) => e.target.style.opacity = '1'}/> */}
       <h1>
         <span>Welcome! I'm Jun Michael,</span>
       </h1>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './About.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
-import aboutImg from '../../assets/about_img.jpg';
+// import aboutImg from '../../assets/about_img.jpg';
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -73,12 +73,12 @@ const About = () => {
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img
+          {/* <img
             src={aboutImg}
             id="jun-about"
             alt="about img"
             loading="lazy"
-          />
+          /> */}
         </div>
         <div className="about-right">
           <div className="about-para">
